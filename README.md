@@ -65,10 +65,6 @@ npm run dev
 
 A aplicação estará disponível em `http://localhost:3000`
 
-## 🔐 Credenciais de Teste (Modo Demo)
-
-Para testar a aplicação, use uma das seguintes credenciais:
-
 ## 📱 Funcionalidades Implementadas
 
 ### ✅ Autenticação
