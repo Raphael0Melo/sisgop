@@ -46,28 +46,22 @@ npm install
 
 ### 2. Configurar Variáveis de Ambiente
 
-Copie o arquivo `.env.local.example` para `.env.local` e configure suas credenciais do Firebase:
+Copie o arquivo `.env.local.example` para `.env.local` e configure suas credenciais:
 
 ```bash
 cp .env.local.example .env.local
 ```
 
-Edite o arquivo `.env.local` com suas configurações do Firebase:
+Edite o arquivo `.env.local` com suas configurações:
 
-```env
-NEXT_PUBLIC_FIREBASE_API_KEY=sua_api_key
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=seu_auth_domain
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=seu_project_id
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=seu_storage_bucket
-NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=seu_messaging_sender_id
-NEXT_PUBLIC_FIREBASE_APP_ID=seu_app_id
-```
+````env
+NEXT_PUBLIC_API_URL=
 
 ### 3. Executar em Desenvolvimento
 
 ```bash
 npm run dev
-```
+````
 
 A aplicação estará disponível em `http://localhost:3000`
 
@@ -76,33 +70,39 @@ A aplicação estará disponível em `http://localhost:3000`
 Para testar a aplicação, use uma das seguintes credenciais:
 
 **Usuário Padrão:**
+
 - Email: `demo@bpa.com`
 - Senha: `demo123`
 
 **Administrador:**
+
 - Email: `admin@bpa.com`
 - Senha: `admin123`
 
 ## 📱 Funcionalidades Implementadas
 
 ### ✅ Autenticação
+
 - Login com email e senha
 - Proteção de rotas
 - Persistência de sessão
 - Logout seguro
 
 ### ✅ Dashboard Principal
+
 - Visão geral do sistema
 - Navegação por módulos
 - Controle de acesso baseado em perfil
 
 ### ✅ Módulos Principais
+
 - **Controle de Acesso**: Gerenciamento de entrada/saída de veículos
 - **Livro do Dia**: Registro de ocorrências diárias
 - **Produtividade**: Métricas e indicadores
 - **Mapa de Força**: Distribuição de unidades operacionais
 
 ### ✅ Interface Moderna
+
 - Design responsivo
 - Sidebar de navegação
 - Componentes acessíveis
@@ -124,24 +124,28 @@ Para testar a aplicação, use uma das seguintes credenciais:
 ## 🔄 Principais Melhorias da Migração
 
 ### De React para Next.js:
+
 1. **Roteamento**: App Router do Next.js 15
 2. **Performance**: Server-side rendering e otimizações automáticas
 3. **SEO**: Melhor indexação e meta tags
 4. **Bundle**: Otimização automática de código
 
 ### De JavaScript para TypeScript:
+
 1. **Tipagem**: Detecção de erros em tempo de desenvolvimento
 2. **IntelliSense**: Melhor experiência de desenvolvimento
 3. **Refatoração**: Mudanças mais seguras
 4. **Documentação**: Tipos servem como documentação
 
 ### De CSS para Tailwind:
+
 1. **Consistência**: Sistema de design unificado
 2. **Performance**: CSS otimizado e purificado
 3. **Responsividade**: Classes utilitárias responsivas
 4. **Manutenibilidade**: Estilos co-localizados
 
 ### De Componentes Customizados para shadcn/ui:
+
 1. **Acessibilidade**: Componentes seguem padrões ARIA
 2. **Consistência**: Design system profissional
 3. **Customização**: Fácil personalização via CSS variables
@@ -150,12 +154,14 @@ Para testar a aplicação, use uma das seguintes credenciais:
 ## 🚀 Deploy
 
 ### Vercel (Recomendado)
+
 ```bash
 npm run build
 npx vercel --prod
 ```
 
 ### Outros Provedores
+
 ```bash
 npm run build
 npm start
@@ -184,4 +190,3 @@ Para dúvidas ou suporte, entre em contato com a equipe de desenvolvimento.
 ---
 
 **Desenvolvido com ❤️ usando Next.js, TypeScript e Tailwind CSS**
-
