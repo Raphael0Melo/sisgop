@@ -69,16 +69,6 @@ A aplicação estará disponível em `http://localhost:3000`
 
 Para testar a aplicação, use uma das seguintes credenciais:
 
-**Usuário Padrão:**
-
-- Email: `demo@bpa.com`
-- Senha: `demo123`
-
-**Administrador:**
-
-- Email: `admin@bpa.com`
-- Senha: `admin123`
-
 ## 📱 Funcionalidades Implementadas
 
 ### ✅ Autenticação
