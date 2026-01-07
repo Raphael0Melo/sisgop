@@ -255,3 +255,15 @@ export interface Assessment {
   number_process: string,
   status: string;
 }
+
+export interface BookDay extends Omit<BookDays, '_id'> {
+  id: string;
+}
+
+export interface Productivity extends Omit<Productitys, '_id'> {
+  id: string;
+}
+
+export interface ControlCarFirestore extends Omit<ControlCar, '_id'> {
+  id: string;
+}

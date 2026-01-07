@@ -220,7 +220,7 @@ export default function HomeMapForce() {
                         </div>
                       </TableCell>
                       <TableCell>
-                        <Badge variant={getStatusColor(unit.status) as any}>
+                        <Badge variant={getStatusColor(unit.status) as "default" | "secondary" | "destructive" | "outline"}>
                           {getStatusLabel(unit.status)}
                         </Badge>
                       </TableCell>

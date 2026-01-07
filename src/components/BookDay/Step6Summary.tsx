@@ -20,7 +20,7 @@ export function Step6Summary() {
         <h3 className="font-medium mt-4">Carga do Quartel</h3>
         {data.carga?.length ? (
           <ul className="list-disc pl-5">
-            {data.carga.map((c: any, i: number) => (
+            {data.carga.map((c: { tipo: string; descricao: string; quantidade: string | number }, i: number) => (
               <li key={i}>
                 {c.tipo} - {c.descricao} ({c.quantidade})
               </li>
@@ -33,7 +33,7 @@ export function Step6Summary() {
         <h3 className="font-medium mt-4">Ocorrências Administrativas</h3>
         {data.adm?.length ? (
           <ul className="list-disc pl-5">
-            {data.adm.map((a: any, i: number) => (
+            {data.adm.map((a: { tipo: string; descricao: string }, i: number) => (
               <li key={i}>{a.tipo}: {a.descricao}</li>
             ))}
           </ul>
@@ -44,7 +44,7 @@ export function Step6Summary() {
         <h3 className="font-medium mt-4">Ocorrências Operacionais</h3>
         {data.oper?.length ? (
           <ul className="list-disc pl-5">
-            {data.oper.map((o: any, i: number) => (
+            {data.oper.map((o: { natureza: string; local: string; resultado: string }, i: number) => (
               <li key={i}>{o.natureza} - {o.local}: {o.resultado}</li>
             ))}
           </ul>
@@ -55,7 +55,7 @@ export function Step6Summary() {
         <h3 className="font-medium mt-4">Juntada</h3>
         {data.juntada?.length ? (
           <ul className="list-disc pl-5">
-            {data.juntada.map((j: any, i: number) => (
+            {data.juntada.map((j: { documento: string; observacao: string }, i: number) => (
               <li key={i}>{j.documento} — {j.observacao}</li>
             ))}
           </ul>
