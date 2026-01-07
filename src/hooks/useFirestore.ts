@@ -32,7 +32,7 @@ export function useFirestore<T>(service: FirestoreService<T>) {
       const id = await service.create({
         ...newData,
         userId: user?.uid,
-      } as any);
+      } as Omit<T, "id" | "createdAt" | "updatedAt">);
       await fetchData(); // Refresh data
       toast.success('Item criado com sucesso!');
       return id;

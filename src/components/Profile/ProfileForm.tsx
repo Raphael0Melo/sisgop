@@ -95,8 +95,8 @@ export function ProfileForm({ isOpen, onClose, initialData, isEditing = false }:
       onClose();
     } catch (error: unknown) {
       // Safe checks: handle Axios-style errors or generic Error instances
-      if (typeof error === 'object' && error !== null && 'response' in error && (error as any).response?.data?.message) {
-        toast.error((error as any).response.data.message);
+      if (typeof error === 'object' && error !== null && 'response' in error && (error as { response: { data: { message: string } } }).response?.data?.message) {
+        toast.error((error as { response: { data: { message: string } } }).response.data.message);
       } else if (error instanceof Error) {
         toast.error(error.message);
       } else {
